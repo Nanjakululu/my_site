@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflective Journal | Alex</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo">Alex<span style="color: var(--primary)">.</span>N</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Portfolio</a></li>
+      <li><a href="reflections.html" class="active">Reflections</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex; align-items:center; gap:15px;">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme"><i class="ri-moon-line"></i></button>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu"><i class="ri-menu-line"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-aos="fade-up">Reflective Journal</h1>
+      <p data-aos="fade-up" data-aos-delay="100" class="text-muted" style="max-width: 600px; margin: 0 auto;">
+        Documenting the journey from technical concept to classroom application. 
+      </p>
+    </div>
+  </section>
+
+  <main class="container content" style="padding-top: 0;">
+    
+    <!-- Timeline Container -->
+    <div class="timeline" data-aos="fade-up">
+
+      <!-- Item 1: Philosophy -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="card accordion-card">
+          <div class="card-header">
+            <div class="card-meta">
+                <span class="project-tag tag-philosophy">Philosophy</span>
+                <span class="date">Oct 2023</span>
+            </div>
+            <h3 class="timeline-role">The Ethics of Technical Instruction</h3>
+            <p class="text-muted snippet">Technical education is not just about transferring knowledge...</p>
+          </div>
+          <div class="card-body">
+            <div class="inner-content">
+              <p>Technical education is not just about transferring knowledge; it's about building adaptive workflows. My philosophy centers on the belief that students must understand the <em>why</em> behind the <em>how</em>.</p>
+              <blockquote>
+                "I’ve learned that technical education is not just about transferring knowledge, but about building adaptive workflows that allow students to navigate uncertainty."
+              </blockquote>
+              <div class="reflection-outcome">
+                <strong>Key Takeaway:</strong> Ethics in TVET requires balancing industry speed with student well-being.
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Read More</span>
+            <i class="ri-arrow-down-s-line expand-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Lesson Insight -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="card accordion-card">
+          <div class="card-header">
+            <div class="card-meta">
+                <span class="project-tag tag-insight">Lesson Insight</span>
+                <span class="date">Nov 2023</span>
+            </div>
+            <h3 class="timeline-role">Adapting to Kinesthetic Learners</h3>
+            <p class="text-muted snippet">During the Electrical Installations module, I noticed a disconnect...</p>
+          </div>
+          <div class="card-body">
+            <div class="inner-content">
+              <p><strong>Challenge:</strong> Students struggled to translate 2D schematics into 3D physical wiring.</p>
+              <p><strong>Action:</strong> I introduced H5P interactive videos that allowed students to "click through" a simulated circuit before touching physical wires.</p>
+              <p><strong>Result:</strong> Assessment scores improved by 15%, and material waste decreased significantly.</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Read More</span>
+            <i class="ri-arrow-down-s-line expand-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Curriculum Design (New) -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="card accordion-card">
+          <div class="card-header">
+            <div class="card-meta">
+                <span class="project-tag tag-design">Curriculum</span>
+                <span class="date">Jan 2024</span>
+            </div>
+            <h3 class="timeline-role">Integrating Soft Skills into Hardware Labs</h3>
+            <p class="text-muted snippet">A reflection on bridging the gap between technical prowess and communication...</p>
+          </div>
+          <div class="card-body">
+            <div class="inner-content">
+              <p>Technical proficiency is moot if the technician cannot communicate the issue. I redesigned the Computer Hardware Servicing lab to include a "Client Simulation" phase.</p>
+              <ul>
+                <li>Students had to diagnose a broken PC.</li>
+                <li>They then had to explain the issue to a "client" (me or a peer) without using jargon.</li>
+                <li>Grading was 50% technical fix, 50% communication clarity.</li>
+              </ul>
+              <p>This mirrored industry realities and improved student confidence in customer interactions.</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Read More</span>
+            <i class="ri-arrow-down-s-line expand-icon"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2024 Alex. All Rights Reserved.</div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

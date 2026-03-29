@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching Practice Portfolio | Alex - Computing & Informatics</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Alex<span style="color: var(--primary)">.</span>N</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Portfolio</a></li>
+        <li><a href="reflections.html">Reflections</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="ri-moon-line"></i></button>
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu"><i class="ri-menu-line"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-aos="fade-up">Teaching Practice Portfolio</h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Systematic documentation of pedagogical activities in the Department of Computing and Informatics.
+      </p>
+      <!-- Breadcrumb for context -->
+      <div class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+        <a href="index.html">Home</a> <span>/</span> <span>Portfolio</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    
+    <!-- SECTION 1: DAILY LOG -->
+    <section class="content-section" aria-labelledby="daily-log-heading">
+      <div class="section-header" data-aos="fade-up">
+        <h2 id="daily-log-heading">Daily Teaching Log & Schedule</h2>
+        <p>Chronological record of instructional delivery and curriculum coverage.</p>
+      </div>
+
+      <div class="schedule-layout">
+        <!-- Activity Column -->
+        <div class="activity-column">
+          <div class="activity-grid">
+            
+            <!-- Day 1: Computing Example -->
+            <article class="card activity-card" data-aos="fade-up">
+              <div class="card-header">
+                <span class="day-badge">Day 1</span>
+                <span class="text-muted">Monday</span>
+              </div>
+              <h3>Introduction to OOP</h3>
+              <p class="text-muted">Delivered an introductory lesson on Object-Oriented Programming concepts using Python. Focused on Classes and Objects.</p>
+              <div class="tag-group">
+                <span class="tag">Python</span>
+                <span class="tag">Theory</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline"><i class="ri-file-pdf-line"></i> Lesson Plan</a>
+                <a href="#" class="btn btn-sm btn-outline"><i class="ri-image-line"></i> Evidence</a>
+              </div>
+            </article>
+
+            <!-- Day 2: Networking Example -->
+            <article class="card activity-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-header">
+                <span class="day-badge">Day 2</span>
+                <span class="text-muted">Tuesday</span>
+              </div>
+              <h3>Networking Lab: Cabling</h3>
+              <p class="text-muted">Hands-on practical session on Ethernet cabling standards (T568A/B). Students created patch cables and tested connectivity.</p>
+              <div class="tag-group">
+                <span class="tag">Networking</span>
+                <span class="tag">Lab</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline"><i class="ri-file-pdf-line"></i> Lab Manual</a>
+              </div>
+            </article>
+
+            <!-- Day 3: Informatics Example -->
+            <article class="card activity-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="card-header">
+                <span class="day-badge">Day 3</span>
+                <span class="text-muted">Wednesday</span>
+              </div>
+              <h3>Database Normalization</h3>
+              <p class="text-muted">Covered 1NF, 2NF, and 3NF. Students worked in groups to normalize a sample unstructured data table.</p>
+              <div class="tag-group">
+                <span class="tag">SQL</span>
+                <span class="tag">Group Work</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline"><i class="ri-video-line"></i> Recording</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Calendar Column -->
+        <div class="calendar-column" data-aos="fade-left">
+          <div class="calendar-widget card">
+            <div class="widget-header">
+              <div class="widget-title"><i class="ri-calendar-todo-line"></i> Teaching Schedule</div>
+              <a href="https://calendar.google.com" target="_blank" class="btn btn-outline btn-sm"><i class="ri-external-link-line"></i> Full Schedule</a>
+            </div>
+            <div class="calendar-container">
+              <!-- Added loading="lazy" for performance -->
+              <iframe 
+                src="https://calendar.google.com/calendar/embed?src=en.ke%23holiday%40group.v.calendar.google.com&ctz=Africa%2FNairobi" 
+                style="border: 0" 
+                width="100%" 
+                height="400" 
+                frameborder="0" 
+                scrolling="no"
+                loading="lazy"
+                title="Teaching Schedule Calendar">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MAJOR ARTIFACTS -->
+    <section class="content-section artifact-section" aria-labelledby="artifacts-heading">
+        <div class="section-header" data-aos="fade-up">
+          <h2 id="artifacts-heading">Major Artifacts & Innovations</h2>
+          <p>Digital tools, lesson designs, and assessment mechanisms developed during practice.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-container" data-aos="fade-up" role="tablist" aria-label="Filter Artifacts">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="lesson" role="tab" aria-selected="false">Lesson Design</button>
+          <button class="filter-btn" data-filter="media" role="tab" aria-selected="false">Instructional Media</button>
+          <button class="filter-btn" data-filter="assessment" role="tab" aria-selected="false">Assessment</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="project-grid" role="tabpanel">
+
+          <!-- Artifact 1: Lesson Plan -->
+          <article class="p-card card" data-category="lesson" data-aos="fade-up">
+            <span class="project-tag tag-lesson">Lesson Design</span>
+            <h3>CBC-Aligned Plan: Python Functions</h3>
+            <p class="text-muted">Comprehensive lesson plan integrating problem-based learning for 2nd-year Programming students.</p>
+            
+            <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline"><i class="ri-file-word-line"></i> Plan Doc</a>
+            </div>
+            <div class="card-footer">
+               <a href="reflections.html" class="btn btn-sm btn-outline"><i class="ri-quill-pen-line"></i> Reflection</a>
+               <button class="btn btn-sm btn-request" data-project="Python Lesson Plan"><i class="ri-chat-new-line"></i> Feedback</button>
+            </div>
+          </article>
+
+          <!-- Artifact 2: Instructional Media -->
+          <article class="p-card card" data-category="media" data-aos="fade-up">
+            <span class="project-tag tag-media">Instructional Media</span>
+            <h3>H5P: Network Topologies</h3>
+            <p class="text-muted">Interactive branching scenario teaching Star, Bus, and Mesh topologies with troubleshooting quizzes.</p>
+            
+            <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline"><i class="ri-play-circle-line"></i> Interactive Demo</a>
+            </div>
+            <div class="card-footer">
+               <a href="#" class="btn btn-sm btn-outline"><i class="ri-external-link-line"></i> Source</a>
+               <button class="btn btn-sm btn-request" data-project="Network Topology H5P"><i class="ri-chat-new-line"></i> Feedback</button>
+            </div>
+          </article>
+
+          <!-- Artifact 3: Assessment Tool -->
+          <article class="p-card card" data-category="assessment" data-aos="fade-up">
+            <span class="project-tag tag-assessment">Assessment Tool</span>
+            <h3>Auto-Grading Script (Python)</h3>
+            <p class="text-muted">A custom Python script utilizing RegEx to automatically grade student SQL queries based on syntax patterns.</p>
+            
+            <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline"><i class="ri-github-line"></i> Repository</a>
+            </div>
+            <div class="card-footer">
+               <a href="reflections.html" class="btn btn-sm btn-outline"><i class="ri-quill-pen-line"></i> Reflection</a>
+               <button class="btn btn-sm btn-request" data-project="Auto-Grading Script"><i class="ri-chat-new-line"></i> Feedback</button>
+            </div>
+          </article>
+
+        </div>
+    </section>
+  </main>
+
+  <!-- Supervisor FAB Button -->
+  <a href="#" class="supervisor-fab" onclick="openModal('Supervisor Review'); event.preventDefault();" aria-label="Open Supervisor Portal">
+    <i class="ri-user-star-line"></i> 
+    <span class="fab-text">Supervisor</span>
+  </a>
+
+  <!-- Supervisor Modal -->
+  <div class="modal-overlay" id="feedbackModal" aria-hidden="true" role="dialog">
+    <div class="modal-content card">
+      <div class="modal-header">
+        <h3>Supervisor Feedback</h3>
+        <button class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+      </div>
+      
+      <form action="https://formspree.io/f/xqeyrrzr" method="POST">
+        <div class="form-group">
+          <label for="supervisor-name">Supervisor Name</label>
+          <input type="text" id="supervisor-name" class="form-input" name="supervisor_name" required>
+        </div>
+        <div class="form-group">
+          <label for="project-name">Project Being Reviewed</label>
+          <input type="text" id="project-name" class="form-input" name="project_name" required readonly>
+        </div>
+        <div class="form-group">
+          <label for="feedback-text">Comments / Recommendations</label>
+          <textarea id="feedback-text" class="form-input" rows="4" name="feedback" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="ri-send-plane-line"></i> Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Alex N. Department of Computing and Informatics.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS Animations
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+
+    // --- Modal Logic ---
+    const modal = document.getElementById('feedbackModal');
+    const modalContent = modal.querySelector('.modal-content');
+    const projectInput = document.getElementById('project-name');
+
+    function openModal(projectName) {
+        projectInput.value = projectName; // Auto-fill project name
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden'; // Prevent background scroll
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on overlay click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+    });
+
+    // --- Artifact Feedback Buttons ---
+    document.querySelectorAll('.btn-request').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const projectName = e.currentTarget.getAttribute('data-project');
+            openModal(projectName);
+        });
+    });
+
+    // --- Filter Logic (Basic Implementation) ---
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.p-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+            
+            cards.forEach(card => {
+                if(filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+  </script>
+</body>
+</html>

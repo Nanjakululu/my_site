@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills & Competencies | Alex</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Specific Grid for Skills Page */
+    .skills-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 900px) {
+      .skills-layout {
+        grid-template-columns: 1.2fr 0.8fr; /* Main skills column is wider */
+        align-items: start;
+      }
+    }
+
+    /* Skill Tag Styling */
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: var(--bg-main);
+      border: 1px solid var(--border-color);
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .skill-tag:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+    .skill-tag i { font-size: 1.1rem; }
+
+    /* Form Enhancements */
+    .assessment-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo">Alex<span style="color: var(--primary)">.</span>N</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Portfolio</a></li>
+      <li><a href="reflections.html">Reflections</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex; align-items:center; gap:15px;">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme"><i class="ri-moon-line"></i></button>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu"><i class="ri-menu-line"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-aos="fade-up">Competencies & Skills</h1>
+      <p class="text-muted" style="max-width: 600px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
+        A holistic overview of technical expertise, pedagogical approaches, and professional tools.
+      </p>
+    </div>
+  </section>
+
+  <main class="container content" style="padding-top: 0;">
+    
+    <div class="skills-layout">
+      
+      <!-- LEFT COLUMN: Dynamic Skills -->
+      <div data-aos="fade-right">
+        <div class="card" style="height: 100%;">
+          <div class="card-header" style="margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <i class="ri-pie-chart-2-line" style="font-size: 1.5rem; color: var(--primary);"></i>
+              <h3 style="margin: 0;">Technical & Pedagogical Proficiency</h3>
+            </div>
+            <p class="text-muted" style="margin-top: 0.5rem;">Proficiency levels based on TVET standards and practical application.</p>
+          </div>
+          
+          <!-- This container is populated by script.js -->
+          <div id="skills-render"></div>
+          
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Tools & Competencies -->
+      <div class="sidebar-column" style="display: flex; flex-direction: column; gap: 2rem;">
+        
+        <!-- Tools & Environment -->
+        <div class="card" data-aos="fade-left">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <i class="ri-tools-line" style="font-size: 1.2rem; color: var(--primary);"></i>
+            <h3 style="margin: 0; font-size: 1.1rem;">Tools & Environment</h3>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+             <span class="skill-tag"><i class="ri-github-fill"></i> GitHub</span>
+             <span class="skill-tag"><i class="ri-terminal-box-line"></i> VS Code</span>
+             <span class="skill-tag"><i class="ri-wordpress-line"></i> WordPress</span>
+             <span class="skill-tag"><i class="ri-google-line"></i> Workspace</span>
+             <span class="skill-tag"><i class="ri-video-line"></i> H5P</span>
+             <span class="skill-tag"><i class="ri-presentation-line"></i> Moodle</span>
+             <span class="skill-tag"><i class="ri-database-2-line"></i> MySQL</span>
+          </div>
+        </div>
+
+        <!-- Professional Competencies -->
+        <div class="card" data-aos="fade-left" data-aos-delay="100">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <i class="ri-user-star-line" style="font-size: 1.2rem; color: var(--primary);"></i>
+            <h3 style="margin: 0; font-size: 1.1rem;">Professional Competencies</h3>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <i class="ri-checkbox-circle-line" style="color: var(--success); margin-top: 4px;"></i>
+              <div>
+                <strong>Curriculum Development</strong>
+                <p class="text-muted" style="font-size: 0.85rem; margin: 2px 0 0 0;">Designing CBC-aligned course outlines.</p>
+              </div>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <i class="ri-checkbox-circle-line" style="color: var(--success); margin-top: 4px;"></i>
+              <div>
+                <strong>Student Assessment</strong>
+                <p class="text-muted" style="font-size: 0.85rem; margin: 2px 0 0 0;">Formative & summative evaluation strategies.</p>
+              </div>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 10px;">
+              <i class="ri-checkbox-circle-line" style="color: var(--success); margin-top: 4px;"></i>
+              <div>
+                <strong>Laboratory Management</strong>
+                <p class="text-muted" style="font-size: 0.85rem; margin: 2px 0 0 0;">Maintaining networking & hardware labs.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SUPERVISOR ASSESSMENT SECTION -->
+    <section style="margin-top: 4rem;" data-aos="fade-up">
+      <div class="card" style="background: linear-gradient(135deg, var(--bg-card), var(--bg-main)); border-top: 4px solid var(--primary);">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="background: var(--primary-light); padding: 10px; border-radius: 50%;">
+            <i class="ri-file-user-line" style="font-size: 1.5rem; color: var(--primary);"></i>
+          </div>
+          <div>
+            <h3 style="margin: 0;">Supervisor Assessment</h3>
+            <p class="text-muted" style="margin:0; font-size: 0.9rem;">Official feedback on demonstrated competencies.</p>
+          </div>
+        </div>
+        
+        <form action="https://formspree.io/f/xqeyrrzr" method="POST" class="assessment-form">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <input type="text" name="supervisor_name" placeholder="Supervisor Name" class="form-input" required>
+            <select name="rating" class="form-input" required>
+              <option value="" disabled selected>Select Rating</option>
+              <option value="Excellent">Excellent (Above Expectations)</option>
+              <option value="Very Good">Very Good (Meets Expectations)</option>
+              <option value="Good">Good (Satisfactory)</option>
+              <option value="Needs Improvement">Needs Improvement</option>
+            </select>
+          </div>
+          <textarea name="feedback" rows="4" placeholder="Comments on specific skill demonstration, classroom management, or professionalism..." class="form-input" required></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;"><i class="ri-send-plane-line"></i> Submit Assessment</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2024 Alex. TVET Teaching Practice Portfolio.</div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
